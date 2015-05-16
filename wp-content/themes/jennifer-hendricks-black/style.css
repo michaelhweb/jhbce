@@ -43,3 +43,52 @@ Required WordPress CSS
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
 }
+
+/*
+Google Font import
+*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,700italic);
+
+/*
+Custom CSS
+*/
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+.site-title>a>img{
+    width: 100%;
+}
+.main-navigation {
+    font-family: arial, sans-serif;
+    font-size: 18px;
+}
+.main-navigation>div {
+    padding: 0;
+}
+.navbar-inverse {
+    border-color: #507298;
+    background-color: #507298;
+    background-image: -webkit-linear-gradient(top, #6183a9 0%, #507298 100%);
+    background-image:      -o-linear-gradient(top, #6183a9 0%, #507298 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6183a9), to(#507298));
+    background-image:         linear-gradient(to bottom, #6183a9 0%, #507298 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6183a9', endColorstr='#ff507298', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+}
+.nav>li>a {
+    padding: 15px 15px;
+    color: #fff;
+}
+.navbar-inverse .nav-justified>.active>a, .nav>li>a:hover, .nav>li>a:focus{
+    background-color: #31557d;
+}
+
+#site-footer {
+    background: #31557d;
+    color: #fff;
+}

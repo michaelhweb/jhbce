@@ -19,6 +19,9 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		
+        <!--favicon-->
+        <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon.png" type="image/png"/>
+        
 		<!--wordpress head-->
 		<?php wp_head(); ?>
 	</head>
@@ -35,15 +38,11 @@
 			<?php do_action('before'); ?> 
 			<header role="banner">
 				<div class="row row-with-vspace site-branding">
-					<div class="col-md-6 site-title">
-						<h1 class="site-title-heading">
-							<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
-						</h1>
-						<div class="site-description">
-							<small>
-								<?php bloginfo('description'); ?> 
-							</small>
-						</div>
+					<div class="site-title">
+						<h1 class="site-title-heading sr-only"><?php bloginfo('name'); ?></h1>
+							<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
+                                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/headerimage.jpg" class="">
+                            </a>
 					</div>
 					<div class="col-md-6 page-header-top-right">
 						<div class="sr-only">
@@ -60,7 +59,7 @@
 				
 				<div class="row main-navigation">
 					<div class="col-md-12">
-						<nav class="navbar navbar-default" role="navigation">
+						<nav class="navbar navbar-inverse" role="navigation">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
 									<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
@@ -71,7 +70,7 @@
 							</div>
 							
 							<div class="collapse navbar-collapse navbar-primary-collapse">
-								<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?> 
+								<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav nav-justified', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?> 
 								<?php dynamic_sidebar('navbar-right'); ?> 
 							</div><!--.navbar-collapse-->
 						</nav>

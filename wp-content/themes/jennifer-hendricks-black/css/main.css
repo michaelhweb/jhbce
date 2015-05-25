@@ -149,7 +149,7 @@ img.aligncenter {
 }
 #main-column .post,
 #main-column .page {
-	border: 1px solid #eee;
+	border: 1px solid #fff;
 	margin-bottom: 20px;
 	padding: 10px;
 }
@@ -194,7 +194,7 @@ img.aligncenter {
 
 #sidebar-left .widget,
 #sidebar-right .widget {
-	border: 1px solid #eee;
+	border: 1px solid #fff;
 	margin-bottom: 20px;
 	overflow: hidden;
 	padding: 10px;
@@ -205,15 +205,15 @@ img.aligncenter {
 }
 #sidebar-left .widget .widget-title,
 #sidebar-right .widget .widget-title {
-	font-size: 18px;
+	font-size: 24px;
 	margin-top: 0;
 }
 
 
 
 #site-footer {
-	background: #f5f5f5;
+	background: #31557d;
 	border-top: 3px solid #ddd;
-	font-size: 12px;
-	padding: 10px;
+	font-size: 18px;
+	padding: 40px;
 }
